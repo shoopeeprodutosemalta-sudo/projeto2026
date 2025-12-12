@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Admin - Adicionar Produto</title>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="admin-box">
+    <h2>Adicionar Produto</h2>
+
+    <input type="text" id="img" placeholder="URL da imagem">
+    <input type="text" id="titulo" placeholder="Título do produto">
+    <input type="text" id="preco" placeholder="Preço">
+    <input type="text" id="link" placeholder="Link do produto">
+
+    <button onclick="addProduct()">Salvar Produto</button>
+
+    <p id="msg"></p>
+</div>
+
+<script src="js/script.js"></script>
+
+<script>
+// bloqueio caso tente acessar sem login
+if (localStorage.getItem("auth") !== "ok") {
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

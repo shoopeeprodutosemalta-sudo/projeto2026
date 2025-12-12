@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ShoppeandoComigo — Catálogo de Produtos</title>
+  <meta name="description" content="Catálogo de produtos com links diretos para compra — ShoppeandoComigo">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <div class="brand">ShoppeandoComigo</div>
+
+    <div class="settings-container">
+        <button id="settingsBtn" class="settings-btn">⚙️</button>
+
+        <div id="settingsMenu" class="settings-menu">
+            <a href="login.html">ADMIN</a>
+        </div>
+    </div>
+
+  </header>
+
+  <main class="container">
+    <h1>Catálogo de Produtos</h1>
+
+    <input type="text" id="search" placeholder="Buscar produto..." class="search-box">
+
+    
+    <div class="products">     
+        
+        <div class="product"> 
+          <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mfuoplxh9athd6.webp" alt="40 Peças / 46 Peças Jogo De Chave Catraca Caixa De Ferramentas Completa Reversível Soquetes Maleta">
+          <h3>40 Peças / 46 Peças Jogo De Chave Catraca Caixa De Ferramentas Completa Reversível Soquetes Maleta</h3>
+          <p>R$29,90</p>
+          <a class="btn" href="https://s.shopee.com.br/9Uu8PHPbxM" target="_blank" rel="noopener noreferrer">Comprar agora</a>
+      </div>
+
+      <div class="product"> 
+          <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-mc14otiwonyx2f.webp" alt="Vestido Feminino Nula Manga Moda Gringa Paty Show Pecuaria Festa Verao Sao Joao">
+          <h3>Vestido Feminino Nula Manga Moda Gringa Paty Show Pecuaria Festa Verao Sao Joao</h3>
+          <p>R$52,99</p>
+          <a class="btn" href="https://s.shopee.com.br/2g3cHkHSQy" target="_blank" rel="noopener noreferrer">Comprar agora</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year"></span> ShoppeandoComigo — Todos os direitos reservados
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <div id="name-overlay" class="overlay">
+  <div class="overlay-box">
+    <h2>Qual é o seu nome?</h2>
+    <input type="text" id="name-input" placeholder="Digite seu nome">
+    <button id="name-ok">Continuar</button>
+  </div>
+    </div>
+
+  <div id="welcome-overlay" class="overlay hidden">
+    <div class="overlay-box">
+        <p id="welcome-message"></p>
+        <button id="welcome-close">Entrar</button>
+    </div>
+  </div>
+
+    <!-- Modal de imagem (COLOQUE AQUI) --> 
+  <div id="imgModal" class="modal">
+    <img id="modalImg" class="modal-content">
+  </div>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="js/script.js" defer></script>
+   
+  <script src="js/script.js"></script>
+  <script>
+        document.getElementById('settingsBtn').addEventListener('click', function () {
+        document.getElementById('settingsMenu').classList.toggle('open');});
+    </script>
+
+
+
+
+</body>
+</html>
